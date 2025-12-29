@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF9A8B"/>
+      <stop offset="50%" style="stop-color:#FF6B8A"/>
+      <stop offset="100%" style="stop-color:#FF8E72"/>
+    </linearGradient>
+  </defs>
+  <!-- 둥근 배경 -->
+  <rect width="32" height="32" rx="8" fill="url(#bg)"/>
+  <!-- 말풍선 (AI 친구와의 대화 상징) -->
+  <path d="M8 10 C8 8.5 9.5 7 12 7 L20 7 C22.5 7 24 8.5 24 10 L24 16 C24 17.5 22.5 19 20 19 L18 19 L16 22 L14 19 L12 19 C9.5 19 8 17.5 8 16 Z" fill="white" opacity="0.95"/>
+  <!-- 하트 (연결과 감정 상징) -->
+  <path d="M16 17 C16 17 12 14 12 12 C12 10.5 13 10 14 10 C15 10 16 11 16 11 C16 11 17 10 18 10 C19 10 20 10.5 20 12 C20 14 16 17 16 17 Z" fill="#FF6B8A"/>
+</svg>
