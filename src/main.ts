@@ -24,10 +24,6 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
       <div class="grid lg:grid-cols-2 gap-12 items-center min-h-[80vh]">
         <!-- Left: Copy -->
         <div class="animate-fade-in-up">
-          <div class="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full text-sm text-stone-600 mb-6 border border-stone-100">
-            <span class="w-2 h-2 bg-accent rounded-full animate-pulse"></span>
-            AI 친구 앱
-          </div>
           <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-stone-800 leading-tight mb-6">
             혼자 있고 싶을 때도,<br>
             <span class="text-primary">누군가 필요할 때</span>도<br>
@@ -44,7 +40,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
               </svg>
             </a>
-            <a href="#features" class="bg-white hover:bg-stone-50 text-stone-700 px-8 py-4 rounded-2xl text-lg font-semibold transition-all border border-stone-200 hover:border-stone-300 flex items-center justify-center">
+            <a href="#about" class="bg-white hover:bg-stone-50 text-stone-700 px-8 py-4 rounded-2xl text-lg font-semibold transition-all border border-stone-200 hover:border-stone-300 flex items-center justify-center">
               더 알아보기
             </a>
           </div>
@@ -76,22 +72,13 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
                     <p class="text-stone-800 font-semibold text-sm">오늘 하루 어땠어?</p>
                   </div>
                   <!-- Chat bubbles -->
-                  <div class="space-y-3 flex-1">
-                    <div class="bg-stone-100 rounded-2xl rounded-tl-sm px-4 py-2.5 text-sm text-stone-700 max-w-[85%]">
-                      오늘 좀 힘들었어...
-                    </div>
-                    <div class="bg-primary/10 rounded-2xl rounded-tr-sm px-4 py-2.5 text-sm text-stone-700 max-w-[85%] ml-auto">
-                      그랬구나. 무슨 일 있었어?
-                    </div>
-                    <div class="bg-stone-100 rounded-2xl rounded-tl-sm px-4 py-2.5 text-sm text-stone-700 max-w-[85%]">
-                      회사에서 발표가 있었는데...
-                    </div>
+                  <div id="chat-container" class="space-y-2.5 flex-1 overflow-hidden">
                   </div>
                   <!-- Input placeholder -->
                   <div class="mt-auto pt-3">
                     <div class="bg-white border border-stone-200 rounded-full px-4 py-3 flex items-center gap-2">
-                      <div class="flex-1 h-4 bg-stone-100 rounded"></div>
-                      <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
+                      <div id="input-text" class="flex-1 text-xs text-stone-500 truncate"></div>
+                      <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
                         <svg class="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M12 5l7 7-7 7"/>
                         </svg>
@@ -115,7 +102,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   </section>
 
   <!-- Problem Section -->
-  <section class="py-24 md:py-32 bg-white relative overflow-hidden">
+  <section id="about" class="py-24 md:py-32 bg-gradient-to-b from-white to-warm-bg relative overflow-hidden">
     <div class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-warm-bg/50 to-transparent pointer-events-none"></div>
 
     <div class="max-w-6xl mx-auto px-6 relative">
@@ -125,7 +112,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
           기존 방식의 한계
         </h2>
         <p class="text-stone-500 max-w-xl mx-auto">
-          데이팅앱을 쓰면서 느꼈던 불편함, 저희도 알아요
+          새로운 사람 만나기, 왜 이렇게 어려울까요?
         </p>
       </div>
 
@@ -139,7 +126,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
             </svg>
           </div>
           <h3 class="text-lg font-bold text-stone-800 mb-2">사진으로 판단</h3>
-          <p class="text-stone-500 text-sm leading-relaxed">외모만으로 스와이프되는 피상적인 경험</p>
+          <p class="text-stone-500 text-sm leading-relaxed">외모만으로 평가되는 피상적인 경험</p>
         </div>
 
         <!-- Card 2 -->
@@ -179,7 +166,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   </section>
 
   <!-- Solution Section -->
-  <section class="py-24 md:py-32 bg-gradient-to-b from-warm-bg to-warm-surface relative overflow-hidden">
+  <section class="py-24 md:py-32 bg-gradient-to-b from-warm-bg to-white relative overflow-hidden">
     <!-- Decorative elements -->
     <div class="absolute top-1/4 left-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl"></div>
     <div class="absolute bottom-1/4 right-0 w-80 h-80 bg-accent/10 rounded-full blur-3xl"></div>
@@ -270,7 +257,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   </section>
 
   <!-- Features Section -->
-  <section id="features" class="py-24 md:py-32 bg-white relative">
+  <section id="features" class="py-24 md:py-32 bg-gradient-to-b from-white to-warm-surface relative">
     <div class="max-w-6xl mx-auto px-6">
       <div class="text-center mb-20 reveal">
         <p class="text-primary font-medium mb-3">핵심 기능</p>
@@ -322,6 +309,50 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
         <!-- Feature 3 -->
         <div class="text-center reveal" style="animation-delay: 0.2s;">
           <div class="relative inline-block mb-8">
+            <div class="w-24 h-24 bg-gradient-to-br from-violet-100 to-violet-50 rounded-3xl flex items-center justify-center mx-auto rotate-3 transition-transform hover:rotate-0">
+              <div class="w-20 h-20 bg-gradient-to-br from-violet-400 to-violet-500 rounded-2xl flex items-center justify-center -rotate-3 shadow-lg shadow-violet-500/25">
+                <svg class="w-10 h-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <h3 class="text-xl font-bold text-stone-800 mb-3">나를 알아가는 주간 리포트</h3>
+          <p class="text-stone-500 leading-relaxed">
+            사고 패턴과 감정 변화를 분석.<br>
+            매주 나에 대한 인사이트를 받아요.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Connection Features Section -->
+  <section class="py-24 md:py-32 bg-gradient-to-b from-warm-surface via-rose-50/30 to-warm-bg relative overflow-hidden">
+    <!-- Decorative elements -->
+    <div class="absolute top-1/4 right-0 w-64 h-64 bg-rose-200/30 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-1/4 left-0 w-80 h-80 bg-primary/10 rounded-full blur-3xl"></div>
+
+    <div class="max-w-6xl mx-auto px-6 relative">
+      <div class="text-center mb-20 reveal">
+        <div class="inline-flex items-center gap-2 bg-rose-100 px-4 py-2 rounded-full text-sm text-rose-600 mb-4">
+          <span class="w-2 h-2 bg-rose-400 rounded-full animate-pulse"></span>
+          Coming Soon
+        </div>
+        <p class="text-primary font-medium mb-3">진짜 인연을 만나다</p>
+        <h2 class="text-3xl md:text-4xl font-bold text-stone-800 mb-4">
+          하루가 연결해주는 특별한 만남
+        </h2>
+        <p class="text-stone-500 max-w-xl mx-auto">
+          AI가 이해한 나를 바탕으로, 정말 잘 맞는 사람을 찾아줘요
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8 lg:gap-12">
+        <!-- Connection Feature 1 -->
+        <div class="text-center reveal">
+          <div class="relative inline-block mb-8">
             <div class="w-24 h-24 bg-gradient-to-br from-rose-100 to-rose-50 rounded-3xl flex items-center justify-center mx-auto rotate-3 transition-transform hover:rotate-0">
               <div class="w-20 h-20 bg-gradient-to-br from-rose-400 to-rose-500 rounded-2xl flex items-center justify-center -rotate-3 shadow-lg shadow-rose-500/25">
                 <svg class="w-10 h-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -329,12 +360,47 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
                 </svg>
               </div>
             </div>
-            <span class="absolute -top-2 -right-2 text-xs font-semibold text-white bg-gradient-to-r from-primary to-primary-dark px-3 py-1 rounded-full shadow-lg">Coming Soon</span>
           </div>
           <h3 class="text-xl font-bold text-stone-800 mb-3">나와 진짜 맞는 사람</h3>
           <p class="text-stone-500 leading-relaxed">
             외모가 아닌 정서 기반 매칭.<br>
-            AI가 분석한 궁합 기반 추천.
+            AI가 분석한 성향으로 추천해요.
+          </p>
+        </div>
+
+        <!-- Connection Feature 2 -->
+        <div class="text-center reveal" style="animation-delay: 0.1s;">
+          <div class="relative inline-block mb-8">
+            <div class="w-24 h-24 bg-gradient-to-br from-amber-100 to-amber-50 rounded-3xl flex items-center justify-center mx-auto -rotate-3 transition-transform hover:rotate-0">
+              <div class="w-20 h-20 bg-gradient-to-br from-amber-400 to-amber-500 rounded-2xl flex items-center justify-center rotate-3 shadow-lg shadow-amber-500/25">
+                <svg class="w-10 h-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <h3 class="text-xl font-bold text-stone-800 mb-3">대화가 막힐 때 코칭</h3>
+          <p class="text-stone-500 leading-relaxed">
+            뭐라고 답장해야 할지 모를 때,<br>
+            하루가 대화 내용을 보고 조언해줘요.
+          </p>
+        </div>
+
+        <!-- Connection Feature 3 -->
+        <div class="text-center reveal" style="animation-delay: 0.2s;">
+          <div class="relative inline-block mb-8">
+            <div class="w-24 h-24 bg-gradient-to-br from-emerald-100 to-emerald-50 rounded-3xl flex items-center justify-center mx-auto rotate-3 transition-transform hover:rotate-0">
+              <div class="w-20 h-20 bg-gradient-to-br from-emerald-400 to-emerald-500 rounded-2xl flex items-center justify-center -rotate-3 shadow-lg shadow-emerald-500/25">
+                <svg class="w-10 h-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <h3 class="text-xl font-bold text-stone-800 mb-3">피드백으로 함께 성장</h3>
+          <p class="text-stone-500 leading-relaxed">
+            추천이 안 맞았다면 알려주세요.<br>
+            하루가 배우며 더 잘 맞는 사람을 찾아요.
           </p>
         </div>
       </div>
@@ -342,59 +408,94 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   </section>
 
   <!-- How it works Section -->
-  <section class="py-24 md:py-32 bg-gradient-to-b from-warm-surface to-warm-bg relative overflow-hidden">
-    <div class="max-w-6xl mx-auto px-6">
+  <section class="py-24 md:py-32 bg-gradient-to-b from-warm-bg to-stone-100 relative overflow-hidden">
+    <div class="max-w-4xl mx-auto px-6">
       <div class="text-center mb-20 reveal">
         <p class="text-primary font-medium mb-3">어떻게 작동하나요?</p>
         <h2 class="text-3xl md:text-4xl font-bold text-stone-800">
-          간단한 3단계
+          하루와 함께하는 여정
         </h2>
       </div>
 
-      <div class="grid md:grid-cols-3 gap-8 relative">
-        <!-- Connection line (desktop) -->
-        <div class="hidden md:block absolute top-16 left-1/4 right-1/4 h-0.5 bg-gradient-to-r from-primary/20 via-primary/40 to-primary/20"></div>
+      <!-- Timeline -->
+      <div class="relative">
+        <!-- Vertical line -->
+        <div class="absolute left-7 md:left-1/2 md:-translate-x-px top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary/40 via-primary/20 to-primary/40"></div>
 
         <!-- Step 1 -->
-        <div class="text-center reveal">
-          <div class="relative inline-block mb-6">
-            <div class="w-16 h-16 bg-white rounded-2xl border-2 border-primary/20 flex items-center justify-center mx-auto shadow-lg relative z-10">
-              <span class="text-2xl font-bold text-primary">1</span>
-            </div>
+        <div class="relative flex items-center gap-6 md:gap-12 mb-16 reveal">
+          <div class="hidden md:block flex-1 text-right pr-12">
+            <h3 class="text-xl font-bold text-stone-800 mb-2">AI 친구와 대화</h3>
+            <p class="text-stone-500">매일 하루의 이야기를 편하게 나눠요.</p>
           </div>
-          <h3 class="text-lg font-bold text-stone-800 mb-2">AI 친구와 대화하기</h3>
-          <p class="text-stone-500 text-sm">
-            매일 하루의 이야기를 나눠요.<br>
-            기분, 생각, 고민 뭐든 좋아요.
-          </p>
+          <div class="w-14 h-14 bg-white rounded-full border-3 border-primary flex items-center justify-center shadow-xl z-10 flex-shrink-0">
+            <span class="text-xl font-bold text-primary">1</span>
+          </div>
+          <div class="flex-1 md:pl-12">
+            <h3 class="text-xl font-bold text-stone-800 mb-2 md:hidden">AI 친구와 대화</h3>
+            <p class="text-stone-500 md:hidden">매일 하루의 이야기를 편하게 나눠요.</p>
+            <p class="hidden md:block text-stone-400">일상, 고민, 생각 뭐든 좋아요</p>
+          </div>
         </div>
 
         <!-- Step 2 -->
-        <div class="text-center reveal" style="animation-delay: 0.1s;">
-          <div class="relative inline-block mb-6">
-            <div class="w-16 h-16 bg-white rounded-2xl border-2 border-primary/20 flex items-center justify-center mx-auto shadow-lg relative z-10">
-              <span class="text-2xl font-bold text-primary">2</span>
-            </div>
+        <div class="relative flex items-center gap-6 md:gap-12 mb-16 reveal" style="animation-delay: 0.1s;">
+          <div class="hidden md:block flex-1 text-right pr-12">
+            <p class="text-stone-400">대화 속에서 자연스럽게</p>
           </div>
-          <h3 class="text-lg font-bold text-stone-800 mb-2">AI가 나를 이해해요</h3>
-          <p class="text-stone-500 text-sm">
-            대화를 통해 성향과 감정 패턴을<br>
-            자연스럽게 분석해요.
-          </p>
+          <div class="w-14 h-14 bg-white rounded-full border-3 border-primary/60 flex items-center justify-center shadow-xl z-10 flex-shrink-0">
+            <span class="text-xl font-bold text-primary/80">2</span>
+          </div>
+          <div class="flex-1 md:pl-12">
+            <h3 class="text-xl font-bold text-stone-800 mb-2">나를 이해해요</h3>
+            <p class="text-stone-500">대화를 통해 성향과 감정 패턴을 파악해요.</p>
+          </div>
         </div>
 
         <!-- Step 3 -->
-        <div class="text-center reveal" style="animation-delay: 0.2s;">
-          <div class="relative inline-block mb-6">
-            <div class="w-16 h-16 bg-white rounded-2xl border-2 border-primary/20 flex items-center justify-center mx-auto shadow-lg relative z-10">
-              <span class="text-2xl font-bold text-primary">3</span>
-            </div>
+        <div class="relative flex items-center gap-6 md:gap-12 mb-16 reveal" style="animation-delay: 0.2s;">
+          <div class="hidden md:block flex-1 text-right pr-12">
+            <h3 class="text-xl font-bold text-stone-800 mb-2">잘 맞는 친구 소개</h3>
+            <p class="text-stone-500">정서적으로 맞는 사람을 AI가 연결해줘요.</p>
           </div>
-          <h3 class="text-lg font-bold text-stone-800 mb-2">잘 맞는 친구 소개</h3>
-          <p class="text-stone-500 text-sm">
-            정서적으로 잘 맞는 사람을<br>
-            AI가 자연스럽게 연결해줘요.
-          </p>
+          <div class="w-14 h-14 bg-white rounded-full border-3 border-primary/60 flex items-center justify-center shadow-xl z-10 flex-shrink-0">
+            <span class="text-xl font-bold text-primary/80">3</span>
+          </div>
+          <div class="flex-1 md:pl-12">
+            <h3 class="text-xl font-bold text-stone-800 mb-2 md:hidden">잘 맞는 친구 소개</h3>
+            <p class="text-stone-500 md:hidden">정서적으로 맞는 사람을 AI가 연결해줘요.</p>
+            <p class="hidden md:block text-stone-400">외모가 아닌 마음으로</p>
+          </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="relative flex items-center gap-6 md:gap-12 mb-16 reveal" style="animation-delay: 0.3s;">
+          <div class="hidden md:block flex-1 text-right pr-12">
+            <p class="text-stone-400">막힐 때 하루가 도와줘요</p>
+          </div>
+          <div class="w-14 h-14 bg-white rounded-full border-3 border-primary/60 flex items-center justify-center shadow-xl z-10 flex-shrink-0">
+            <span class="text-xl font-bold text-primary/80">4</span>
+          </div>
+          <div class="flex-1 md:pl-12">
+            <h3 class="text-xl font-bold text-stone-800 mb-2">대화 코칭</h3>
+            <p class="text-stone-500">뭐라고 답해야 할지 모를 때 조언을 받아요.</p>
+          </div>
+        </div>
+
+        <!-- Step 5 -->
+        <div class="relative flex items-center gap-6 md:gap-12 reveal" style="animation-delay: 0.4s;">
+          <div class="hidden md:block flex-1 text-right pr-12">
+            <h3 class="text-xl font-bold text-stone-800 mb-2">함께 성장</h3>
+            <p class="text-stone-500">피드백을 주면 더 잘 맞는 사람을 찾아요.</p>
+          </div>
+          <div class="w-14 h-14 bg-white rounded-full border-3 border-primary flex items-center justify-center shadow-xl z-10 flex-shrink-0">
+            <span class="text-xl font-bold text-primary">5</span>
+          </div>
+          <div class="flex-1 md:pl-12">
+            <h3 class="text-xl font-bold text-stone-800 mb-2 md:hidden">함께 성장</h3>
+            <p class="text-stone-500 md:hidden">피드백을 주면 더 잘 맞는 사람을 찾아요.</p>
+            <p class="hidden md:block text-stone-400">하루와 함께 점점 더 좋아져요</p>
+          </div>
         </div>
       </div>
     </div>
@@ -423,18 +524,25 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
       </p>
 
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="#" class="group bg-white hover:bg-stone-50 text-stone-900 px-8 py-4 rounded-2xl text-lg font-semibold transition-all hover:shadow-2xl hover:-translate-y-1 inline-flex items-center justify-center gap-3">
+        <button id="btn-appstore" class="group bg-white hover:bg-stone-50 text-stone-900 px-8 py-4 rounded-2xl text-lg font-semibold transition-all hover:shadow-2xl hover:-translate-y-1 inline-flex items-center justify-center gap-3 relative">
+          <span class="absolute -top-2 -right-2 text-xs font-semibold text-white bg-gradient-to-r from-primary to-primary-dark px-2 py-0.5 rounded-full">출시 예정</span>
           <svg class="w-7 h-7" viewBox="0 0 24 24" fill="currentColor">
             <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/>
           </svg>
           App Store
-        </a>
-        <a href="#" class="group bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-2xl text-lg font-semibold transition-all border border-white/20 hover:border-white/30 hover:-translate-y-1 inline-flex items-center justify-center gap-3 backdrop-blur-sm">
+        </button>
+        <button id="btn-playstore" class="group bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-2xl text-lg font-semibold transition-all border border-white/20 hover:border-white/30 hover:-translate-y-1 inline-flex items-center justify-center gap-3 backdrop-blur-sm relative">
+          <span class="absolute -top-2 -right-2 text-xs font-semibold text-white bg-gradient-to-r from-primary to-primary-dark px-2 py-0.5 rounded-full">출시 예정</span>
           <svg class="w-7 h-7" viewBox="0 0 24 24" fill="currentColor">
             <path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 01-.61-.92V2.734a1 1 0 01.609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.198l2.807 1.626a1 1 0 010 1.73l-2.808 1.626L15.206 12l2.492-2.491zM5.864 2.658L16.8 8.99l-2.302 2.302-8.634-8.634z"/>
           </svg>
           Google Play
-        </a>
+        </button>
+      </div>
+
+      <!-- Toast -->
+      <div id="toast" class="fixed bottom-8 left-1/2 -translate-x-1/2 bg-stone-800 text-white px-6 py-3 rounded-full shadow-xl opacity-0 pointer-events-none transition-all duration-300 translate-y-4">
+        곧 출시 예정이에요! 조금만 기다려주세요 ✨
       </div>
     </div>
   </section>
@@ -446,21 +554,9 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
         <!-- Brand -->
         <div class="md:col-span-2">
           <p class="text-2xl font-bold text-white mb-3">하루</p>
-          <p class="text-stone-400 mb-6 max-w-sm">
+          <p class="text-stone-400 max-w-sm">
             AI 친구와 대화하고, 진짜 나와 맞는 인연을 만나보세요.
           </p>
-          <div class="flex gap-4">
-            <a href="#" class="w-10 h-10 bg-stone-800 hover:bg-stone-700 rounded-xl flex items-center justify-center transition-colors">
-              <svg class="w-5 h-5 text-stone-400" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
-              </svg>
-            </a>
-            <a href="#" class="w-10 h-10 bg-stone-800 hover:bg-stone-700 rounded-xl flex items-center justify-center transition-colors">
-              <svg class="w-5 h-5 text-stone-400" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-              </svg>
-            </a>
-          </div>
         </div>
 
         <!-- Links -->
@@ -469,7 +565,6 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
           <ul class="space-y-3 text-stone-400">
             <li><a href="#features" class="hover:text-white transition-colors">기능 소개</a></li>
             <li><a href="#download" class="hover:text-white transition-colors">앱 다운로드</a></li>
-            <li><a href="#" class="hover:text-white transition-colors">자주 묻는 질문</a></li>
           </ul>
         </div>
 
@@ -518,3 +613,138 @@ window.addEventListener('scroll', () => {
     nav?.classList.remove('bg-white/80', 'backdrop-blur-md', 'border-b', 'border-stone-100')
   }
 })
+
+// Toast for coming soon buttons
+const toast = document.getElementById('toast')
+const showToast = () => {
+  if (!toast) return
+  toast.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-4')
+  toast.classList.add('opacity-100', 'translate-y-0')
+
+  setTimeout(() => {
+    toast.classList.add('opacity-0', 'pointer-events-none', 'translate-y-4')
+    toast.classList.remove('opacity-100', 'translate-y-0')
+  }, 3000)
+}
+
+document.getElementById('btn-appstore')?.addEventListener('click', showToast)
+document.getElementById('btn-playstore')?.addEventListener('click', showToast)
+
+// Chat animation
+const chatContainer = document.getElementById('chat-container')
+const inputText = document.getElementById('input-text')
+
+const chatMessages = [
+  { type: 'ai', text: '오늘 하루 어땠어?' },
+  { type: 'user', text: '회사에서 발표했는데 망한것같아' },
+  { type: 'ai', text: '에이 왜? 무슨 일 있었어?' },
+  { type: 'user', text: '중간에 머리가 하얘졌어 ㅠㅠ' },
+  { type: 'ai', text: '긴장했구나.. 그래도 끝까지 했잖아' },
+  { type: 'user', text: '그치? 그래도 해냈지 ㅎㅎ' },
+]
+
+const createTypingIndicator = () => {
+  const div = document.createElement('div')
+  div.className = 'chat-bubble bg-primary/15 rounded-2xl rounded-tl-sm px-4 py-2.5 max-w-[50%] flex items-center gap-1'
+  div.innerHTML = `
+    <span class="typing-dot w-1.5 h-1.5 bg-stone-500 rounded-full"></span>
+    <span class="typing-dot w-1.5 h-1.5 bg-stone-500 rounded-full"></span>
+    <span class="typing-dot w-1.5 h-1.5 bg-stone-500 rounded-full"></span>
+  `
+  div.style.animation = 'chat-appear 0.3s ease-out forwards'
+  return div
+}
+
+const createMessage = (type: string, text: string) => {
+  const div = document.createElement('div')
+  if (type === 'ai') {
+    div.className = 'chat-bubble bg-primary/15 rounded-2xl rounded-tl-sm px-3 py-2 text-xs text-stone-700 max-w-[80%]'
+  } else {
+    div.className = 'chat-bubble bg-stone-200 rounded-2xl rounded-tr-sm px-3 py-2 text-xs text-stone-700 max-w-[80%] ml-auto'
+  }
+  div.textContent = text
+  div.style.animation = 'chat-appear 0.3s ease-out forwards'
+  return div
+}
+
+let currentIndex = 0
+let typingIndicator: HTMLElement | null = null
+
+const createEndBadge = () => {
+  const div = document.createElement('div')
+  div.className = 'chat-bubble flex items-center justify-center gap-1.5 py-3'
+  div.innerHTML = `
+    <div class="w-5 h-5 bg-gradient-to-br from-primary to-primary-dark rounded-lg flex items-center justify-center">
+      <svg class="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+      </svg>
+    </div>
+    <span class="text-xs font-medium text-stone-500">AI 친구, 하루</span>
+  `
+  div.style.animation = 'chat-appear 0.4s ease-out forwards'
+  return div
+}
+
+const resetChat = () => {
+  if (!chatContainer) return
+  // Fade out all messages
+  chatContainer.style.transition = 'opacity 0.5s ease-out'
+  chatContainer.style.opacity = '0'
+
+  setTimeout(() => {
+    // Clear and reset
+    chatContainer.innerHTML = ''
+    chatContainer.style.opacity = '1'
+    currentIndex = 0
+    // Restart animation
+    setTimeout(animateChat, 500)
+  }, 500)
+}
+
+const animateChat = () => {
+  if (!chatContainer || !inputText) return
+  if (currentIndex >= chatMessages.length) {
+    // Show end badge
+    const endBadge = createEndBadge()
+    chatContainer.appendChild(endBadge)
+    chatContainer.scrollTop = chatContainer.scrollHeight
+    // Wait 5 seconds then reset
+    setTimeout(resetChat, 5000)
+    return
+  }
+
+  const msg = chatMessages[currentIndex]
+
+  if (msg.type === 'ai') {
+    // Show typing indicator first
+    typingIndicator = createTypingIndicator()
+    chatContainer.appendChild(typingIndicator)
+    chatContainer.scrollTop = chatContainer.scrollHeight
+
+    setTimeout(() => {
+      // Remove typing indicator and show message
+      typingIndicator?.remove()
+      const msgEl = createMessage('ai', msg.text)
+      chatContainer.appendChild(msgEl)
+      chatContainer.scrollTop = chatContainer.scrollHeight
+      currentIndex++
+      setTimeout(animateChat, 1200)
+    }, 800)
+  } else {
+    // Show typing in input field
+    inputText.textContent = msg.text
+
+    setTimeout(() => {
+      // Clear input and show message
+      inputText.textContent = ''
+      const msgEl = createMessage('user', msg.text)
+      chatContainer.appendChild(msgEl)
+      chatContainer.scrollTop = chatContainer.scrollHeight
+      currentIndex++
+      setTimeout(animateChat, 1200)
+    }, 600)
+  }
+}
+
+// Start chat animation after page load
+setTimeout(animateChat, 1000)
