@@ -552,10 +552,11 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
     <div class="max-w-6xl mx-auto px-6">
       <div class="grid md:grid-cols-4 gap-12 mb-12">
         <!-- Brand -->
-        <div class="md:col-span-2">
+        <div>
           <p class="text-2xl font-bold text-white mb-3">하루</p>
-          <p class="text-stone-400 max-w-sm">
-            AI 친구와 대화하고, 진짜 나와 맞는 인연을 만나보세요.
+          <p class="text-stone-400 text-sm">
+            AI 친구와 대화하고,<br>
+            진짜 나와 맞는 인연을 만나보세요.
           </p>
         </div>
 
@@ -573,7 +574,13 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
           <ul class="space-y-3 text-stone-400">
             <li><a href="#" class="hover:text-white transition-colors">이용약관</a></li>
             <li><a href="#" class="hover:text-white transition-colors">개인정보처리방침</a></li>
-            <li><a href="#" class="hover:text-white transition-colors">문의하기</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-white font-semibold mb-4">문의</h4>
+          <ul class="space-y-3 text-stone-400">
+            <li><a href="mailto:damu@damu.dev" class="hover:text-white transition-colors">damu@damu.dev</a></li>
           </ul>
         </div>
       </div>
