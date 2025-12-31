@@ -1,0 +1,175 @@
+{
+  "meta": {
+    "title": "Haru - Chat with AI Friend, Find Real Connections",
+    "description": "Chat with an AI friend who listens without judgment. Your conversations become a diary, and AI understands you to connect you with truly compatible people.",
+    "keywords": "AI friend, Haru, AI chat, emotional care, emotional matching, AI diary"
+  },
+  "nav": {
+    "brand": "Haru",
+    "cta": "Get Started"
+  },
+  "hero": {
+    "headline1": "Sometimes you want to be alone,",
+    "headline2": "sometimes you need",
+    "headline3": " someone",
+    "subheadline1": "Chat with an AI friend who listens without judgment.",
+    "subheadline2": "Ready to share your day with you.",
+    "ctaPrimary": "Start for Free",
+    "ctaSecondary": "Learn More"
+  },
+  "phone": {
+    "greeting": "How was your day?",
+    "aiFriendLabel": "AI Friend, Haru"
+  },
+  "chat": [
+    { "type": "ai", "text": "How was your day?" },
+    { "type": "user", "text": "I had a presentation at work and I think I blew it" },
+    { "type": "ai", "text": "Oh no, what happened?" },
+    { "type": "user", "text": "My mind went blank in the middle..." },
+    { "type": "ai", "text": "You must've been nervous.. but you finished it, right?" },
+    { "type": "user", "text": "Yeah, at least I made it through!" }
+  ],
+  "problem": {
+    "badge": "Why different?",
+    "title": "Limits of Traditional Ways",
+    "subtitle": "Why is it so hard to meet new people?",
+    "cards": [
+      {
+        "title": "Judged by Photos",
+        "description": "Superficial experiences based on looks alone"
+      },
+      {
+        "title": "Embarrassing to Admit",
+        "description": "Awkward to say \"I use dating apps\""
+      },
+      {
+        "title": "Awkward Conversations",
+        "description": "Matches that go nowhere"
+      },
+      {
+        "title": "Pressure to Date",
+        "description": "Too much pressure when romance is the goal from the start"
+      }
+    ]
+  },
+  "solution": {
+    "badge": "A New Way",
+    "title": "Haru is Different",
+    "description1": "It's not a dating app.",
+    "description2": "Chat casually with an AI friend,",
+    "description3": "and AI that understands you introduces compatible friends.",
+    "quote": "\"I know someone who'd be<br>a great match for you. Wanna hear?\"",
+    "features": [
+      {
+        "title": "Natural Beginning",
+        "description": "Start as friends, not with dating expectations"
+      },
+      {
+        "title": "Emotional Matching",
+        "description": "Finding someone who connects on an emotional level"
+      },
+      {
+        "title": "AI Takes the Lead",
+        "description": "No swiping—AI recommends compatible people"
+      }
+    ]
+  },
+  "features": {
+    "badge": "Core Features",
+    "title": "Daily Life with Haru",
+    "subtitle": "Time to understand yourself, bit by bit",
+    "cards": [
+      {
+        "title": "AI Friend Available Anytime",
+        "description": "A friend who listens without judgment.<br>Feels like a real friend who reaches out first."
+      },
+      {
+        "title": "Conversations Become a Diary",
+        "description": "Your daily chats are organized automatically.<br>Time to reflect on yourself objectively."
+      },
+      {
+        "title": "Weekly Self-Discovery Report",
+        "description": "Analyzes your thought patterns and emotions.<br>Get weekly insights about yourself."
+      }
+    ]
+  },
+  "connection": {
+    "comingSoon": "Coming Soon",
+    "badge": "Find Real Connections",
+    "title": "Special Connections Haru Creates",
+    "subtitle": "Based on how AI understands you, we find truly compatible people",
+    "cards": [
+      {
+        "title": "Someone Who Truly Fits",
+        "description": "Emotional-based matching, not looks.<br>Recommendations based on AI-analyzed personality."
+      },
+      {
+        "title": "Coaching When Stuck",
+        "description": "When you don't know what to reply,<br>Haru gives advice based on the conversation."
+      },
+      {
+        "title": "Grow Together with Feedback",
+        "description": "Tell us if recommendations weren't right.<br>Haru learns to find better matches."
+      }
+    ]
+  },
+  "howItWorks": {
+    "badge": "How does it work?",
+    "title": "Your Journey with Haru",
+    "steps": [
+      {
+        "title": "Chat with AI Friend",
+        "description": "Share your daily stories comfortably.",
+        "hint": "Anything—daily life, worries, thoughts"
+      },
+      {
+        "title": "Haru Understands You",
+        "description": "Learns your personality and emotional patterns through conversation.",
+        "hint": "Naturally through conversation"
+      },
+      {
+        "title": "Meet Compatible Friends",
+        "description": "AI connects you with emotionally compatible people.",
+        "hint": "Heart over appearance"
+      },
+      {
+        "title": "Conversation Coaching",
+        "description": "Get advice when you don't know what to say.",
+        "hint": "Haru helps when you're stuck"
+      },
+      {
+        "title": "Grow Together",
+        "description": "Give feedback and find even better matches.",
+        "hint": "Getting better together with Haru"
+      }
+    ]
+  },
+  "cta": {
+    "badge": "Start for Free",
+    "title1": "Start your journey",
+    "title2": "with Haru today",
+    "subtitle1": "A friend who listens without judgment",
+    "subtitle2": "is waiting to hear your story.",
+    "comingSoon": "Coming Soon",
+    "appStore": "App Store",
+    "googlePlay": "Google Play",
+    "toast": "Coming soon! Please wait a little longer ✨"
+  },
+  "footer": {
+    "brand": "Haru",
+    "tagline1": "Chat with an AI friend,",
+    "tagline2": "and find connections that truly fit you.",
+    "service": "Service",
+    "featuresLink": "Features",
+    "download": "Download App",
+    "company": "Company",
+    "terms": "Terms of Service",
+    "privacy": "Privacy Policy",
+    "contact": "Contact",
+    "copyright": "© 2025 Haru. All rights reserved."
+  },
+  "langSwitcher": {
+    "ko": "한국어",
+    "en": "English"
+  }
+}
