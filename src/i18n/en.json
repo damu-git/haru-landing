@@ -171,5 +171,169 @@
   "langSwitcher": {
     "ko": "한국어",
     "en": "English"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "pageTitle": "Privacy Policy - Haru",
+    "backToHome": "← Home",
+    "intro": "Damu (hereinafter \"Company\") establishes and discloses this Privacy Policy in accordance with the Personal Information Protection Act to protect users' personal information and handle related grievances promptly and smoothly.",
+    "effectiveDate": "Effective Date: January 1, 2026",
+    "sections": {
+      "purpose": {
+        "title": "1. Purpose of Processing Personal Information",
+        "intro": "The Company processes personal information for the following purposes:",
+        "headers": ["Purpose", "Details"],
+        "rows": [
+          ["Membership Registration & Management", "Service membership, identity verification, age verification, fraud prevention"],
+          ["Service Provision", "AI conversation service, friend matching service, personalized content"],
+          ["Paid Services", "Subscription payment, refund processing, billing"],
+          ["Customer Support", "Inquiry response, announcements, dispute resolution"],
+          ["Service Improvement", "Usage statistics, AI quality improvement"]
+        ]
+      },
+      "collection": {
+        "title": "2. Personal Information Collected",
+        "required": "Required Items",
+        "requiredHeaders": ["Collection Point", "Items"],
+        "requiredRows": [
+          ["Registration", "Email, password (for email signup), nickname, date of birth, gender"],
+          ["Social Login", "Social account identifier (Google/Apple ID)"],
+          ["Service Use", "AI conversation content, profile information, interests, usage history"],
+          ["Payment", "Payment history, subscription status (card info stored by payment processor)"]
+        ],
+        "auto": "Automatically Collected",
+        "autoItems": [
+          "Device information (OS, app version, device identifier)",
+          "Access logs, IP address, service usage records",
+          "Push token (when notification consent is given)"
+        ],
+        "optional": "Optional Items",
+        "optionalItems": [
+          "Profile photo",
+          "Location information (user-provided)"
+        ]
+      },
+      "retention": {
+        "title": "3. Retention Period of Personal Information",
+        "headers": ["Item", "Retention Period", "Legal Basis"],
+        "rows": [
+          ["Member Information", "Until account deletion", "Service agreement"],
+          ["AI Conversation Content", "Until account deletion (or upon individual deletion request)", "Service provision"],
+          ["Payment Records", "5 years", "E-Commerce Act"],
+          ["Access Logs", "3 months", "Telecommunications Privacy Act"],
+          ["Dispute Records", "3 years", "E-Commerce Act"]
+        ],
+        "note": "※ Personal information is destroyed without delay upon account deletion. However, if retention is required by law, it will be stored for the required period before destruction."
+      },
+      "thirdParty": {
+        "title": "4. Disclosure to Third Parties",
+        "intro": "The Company does not provide users' personal information to third parties in principle. However, exceptions are made in the following cases:",
+        "items": [
+          "When the user has given prior consent",
+          "When required by law or upon request following legal procedures for investigation purposes"
+        ]
+      },
+      "outsourcing": {
+        "title": "5. Outsourcing of Personal Information Processing",
+        "intro": "The Company outsources personal information processing for service provision as follows:",
+        "headers": ["Service Provider", "Outsourced Tasks", "Retention Period"],
+        "rows": [
+          ["Google Firebase", "Authentication, push notifications, app analytics", "Until contract termination"],
+          ["Google Cloud (Gemini)", "AI response generation", "Temporary processing during API calls"],
+          ["Anthropic (Claude)", "AI response generation", "Temporary processing during API calls"],
+          ["OpenAI (GPT)", "AI response generation", "Temporary processing during API calls"],
+          ["Amazon Web Services", "Data storage and processing", "Until contract termination"],
+          ["Apple Inc.", "Social login authentication", "Until contract termination"],
+          ["RevenueCat", "Subscription payment management", "Until contract termination"]
+        ],
+        "note": "※ AI conversation content is stored on Company servers for service provision (maintaining conversation context). AI service providers (Google, Anthropic, OpenAI) only process data during API calls and do not store or use it for AI model training."
+      },
+      "overseas": {
+        "title": "6. Overseas Transfer of Personal Information",
+        "intro": "The Company transfers personal information overseas for service provision:",
+        "headers": ["Recipient", "Country", "Items Transferred", "Purpose"],
+        "rows": [
+          ["Google LLC", "USA", "Account info, app usage, conversation content", "Authentication, analytics, AI response"],
+          ["Anthropic", "USA", "Conversation content (during API calls)", "AI response generation"],
+          ["OpenAI", "USA", "Conversation content (during API calls)", "AI response generation"],
+          ["Amazon Web Services", "USA/Korea", "All service data", "Data storage"],
+          ["Apple Inc.", "USA", "Account information", "Social login authentication"],
+          ["RevenueCat", "USA", "Payment information", "Subscription management"]
+        ]
+      },
+      "destruction": {
+        "title": "7. Destruction of Personal Information",
+        "intro": "The Company destroys personal information without delay when the retention period expires or the processing purpose is achieved:",
+        "items": [
+          "Electronic files: Permanently deleted using irreversible methods",
+          "Paper documents: Shredded or incinerated"
+        ]
+      },
+      "rights": {
+        "title": "8. User Rights and How to Exercise Them",
+        "intro": "Users may exercise the following rights at any time:",
+        "headers": ["Right", "How to Exercise"],
+        "rows": [
+          ["Request to view personal information", "App settings or customer service"],
+          ["Request to correct/delete personal information", "App settings or customer service"],
+          ["Request to stop processing personal information", "Customer service"],
+          ["Account deletion", "App Settings > Account > Delete Account"]
+        ],
+        "note": "※ We do not collect personal information from children under 14 years of age."
+      },
+      "security": {
+        "title": "9. Security Measures for Personal Information",
+        "intro": "The Company takes the following measures to ensure the security of personal information:",
+        "items": [
+          "Encryption of personal information (TLS for transmission, AES-256 for storage)",
+          "Access permission management and restrictions",
+          "Personal information access log retention",
+          "Security software installation and regular inspections"
+        ]
+      },
+      "officer": {
+        "title": "10. Privacy Officer",
+        "headers": ["Category", "Information"],
+        "rows": [
+          ["Name", "Beomseok Choi"],
+          ["Position", "CEO"],
+          ["Email", "privacy@haruai.im"]
+        ],
+        "note": "For inquiries, complaints, or damage relief regarding personal information, please contact the above."
+      },
+      "remedies": {
+        "title": "11. Remedies for Rights Infringement",
+        "intro": "If you need to report or consult about personal information infringement, please contact the following organizations:",
+        "items": [
+          "Personal Information Infringement Report Center: privacy.kisa.or.kr / 118",
+          "Personal Information Dispute Mediation Committee: kopico.go.kr / 1833-6972",
+          "Supreme Prosecutors' Office Cyber Investigation Division: spo.go.kr / 1301",
+          "National Police Agency Cyber Bureau: cyberbureau.police.go.kr / 182"
+        ]
+      },
+      "changes": {
+        "title": "12. Changes to Privacy Policy",
+        "content": "This Privacy Policy is effective from January 1, 2026. Changes will be announced through in-app notifications 7 days in advance."
+      }
+    }
+  },
+  "accountDeletion": {
+    "pageTitle": "Account Deletion Guide - Haru",
+    "title": "Account Deletion Guide",
+    "backToHome": "← Home",
+    "intro": "You can delete your account directly from the Haru app.<br>Please follow the instructions below to delete your account.",
+    "steps": [
+      { "title": "Open the Haru App", "description": "Open the Haru app and log in." },
+      { "title": "Go to Settings", "description": "Tap the <strong>My Page</strong> tab at the bottom right, then tap the <strong>Settings</strong> icon." },
+      { "title": "Account Management", "description": "Select <strong>Account</strong> from the settings menu." },
+      { "title": "Delete Account", "description": "Tap <strong>Delete Account</strong> and follow the instructions." }
+    ],
+    "warningTitle": "Important Notice",
+    "warnings": [
+      "All conversation history and data will be permanently deleted upon deletion.",
+      "Deleted data cannot be recovered.",
+      "If you have an active subscription, please cancel it first."
+    ],
+    "contactInfo": "If you have trouble deleting your account, please contact <a href=\"mailto:privacy@haruai.im\" class=\"text-primary hover:underline\">privacy@haruai.im</a>."
   }
 }

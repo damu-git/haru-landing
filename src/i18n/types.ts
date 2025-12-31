@@ -16,6 +16,62 @@ export interface TimelineStep {
   hint?: string;
 }
 
+export interface AccountDeletionStep {
+  title: string;
+  description: string;
+}
+
+export interface PrivacySection {
+  title: string;
+  intro?: string;
+  content?: string;
+  note?: string;
+  headers?: string[];
+  rows?: string[][];
+  items?: string[];
+}
+
+export interface PrivacyTranslations {
+  title: string;
+  pageTitle: string;
+  backToHome: string;
+  intro: string;
+  effectiveDate: string;
+  sections: {
+    purpose: PrivacySection & { headers: string[]; rows: string[][] };
+    collection: PrivacySection & {
+      required: string;
+      requiredHeaders: string[];
+      requiredRows: string[][];
+      auto: string;
+      autoItems: string[];
+      optional: string;
+      optionalItems: string[];
+    };
+    retention: PrivacySection & { headers: string[]; rows: string[][] };
+    thirdParty: PrivacySection & { items: string[] };
+    outsourcing: PrivacySection & { headers: string[]; rows: string[][] };
+    overseas: PrivacySection & { headers: string[]; rows: string[][] };
+    destruction: PrivacySection & { items: string[] };
+    rights: PrivacySection & { headers: string[]; rows: string[][] };
+    security: PrivacySection & { items: string[] };
+    officer: PrivacySection & { headers: string[]; rows: string[][] };
+    remedies: PrivacySection & { items: string[] };
+    changes: PrivacySection & { content: string };
+  };
+}
+
+export interface AccountDeletionTranslations {
+  pageTitle: string;
+  title: string;
+  backToHome: string;
+  intro: string;
+  steps: AccountDeletionStep[];
+  warningTitle: string;
+  warnings: string[];
+  contactInfo: string;
+}
+
 export interface Translations {
   meta: {
     title: string;
@@ -101,4 +157,6 @@ export interface Translations {
     ko: string;
     en: string;
   };
+  privacy: PrivacyTranslations;
+  accountDeletion: AccountDeletionTranslations;
 }
