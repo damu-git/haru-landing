@@ -40,11 +40,12 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
             <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/>
             </svg>
-            <span>${getCurrentLocale() === 'ko' ? i18n.langSwitcher.ko : i18n.langSwitcher.en}</span>
+            <span>${getCurrentLocale() === 'ko' ? i18n.langSwitcher.ko : getCurrentLocale() === 'ja' ? i18n.langSwitcher.ja : i18n.langSwitcher.en}</span>
           </button>
           <div id="lang-dropdown" class="absolute right-0 mt-1 w-32 bg-white rounded-lg shadow-lg border border-stone-100 py-1 hidden z-50">
             <button data-lang="ko" class="w-full text-left px-4 py-2 text-sm hover:bg-stone-50 transition-colors ${getCurrentLocale() === 'ko' ? 'text-primary font-medium' : 'text-stone-600'}">${i18n.langSwitcher.ko}</button>
             <button data-lang="en" class="w-full text-left px-4 py-2 text-sm hover:bg-stone-50 transition-colors ${getCurrentLocale() === 'en' ? 'text-primary font-medium' : 'text-stone-600'}">${i18n.langSwitcher.en}</button>
+            <button data-lang="ja" class="w-full text-left px-4 py-2 text-sm hover:bg-stone-50 transition-colors ${getCurrentLocale() === 'ja' ? 'text-primary font-medium' : 'text-stone-600'}">${i18n.langSwitcher.ja}</button>
           </div>
         </div>
         <a href="/" class="text-stone-600 hover:text-stone-800 text-sm font-medium">${p.backToHome}</a>

@@ -1,14 +1,16 @@
 import type { Locale, Translations } from './types';
 import ko from './ko.json';
 import en from './en.json';
+import ja from './ja.json';
 
 const STORAGE_KEY = 'haru-locale';
-const SUPPORTED_LOCALES: Locale[] = ['ko', 'en'];
+const SUPPORTED_LOCALES: Locale[] = ['ko', 'en', 'ja'];
 const DEFAULT_LOCALE: Locale = 'ko';
 
 const translations: Record<Locale, Translations> = {
   ko: ko as Translations,
   en: en as Translations,
+  ja: ja as Translations,
 };
 
 /**
@@ -94,7 +96,8 @@ export function updateMetaTags(): void {
   updateMeta('meta[name="keywords"]', meta.keywords);
   updateMeta('meta[property="og:title"]', meta.title);
   updateMeta('meta[property="og:description"]', meta.description);
-  updateMeta('meta[property="og:locale"]', locale === 'ko' ? 'ko_KR' : 'en_US');
+  const ogLocale = locale === 'ko' ? 'ko_KR' : locale === 'ja' ? 'ja_JP' : 'en_US';
+  updateMeta('meta[property="og:locale"]', ogLocale);
   updateMeta('meta[name="twitter:title"]', meta.title);
   updateMeta('meta[name="twitter:description"]', meta.description);
 }

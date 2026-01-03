@@ -1,4 +1,4 @@
-export type Locale = 'ko' | 'en';
+export type Locale = 'ko' | 'en' | 'ja';
 
 export interface ChatMessage {
   type: 'ai' | 'user';
@@ -156,6 +156,7 @@ export interface Translations {
   langSwitcher: {
     ko: string;
     en: string;
+    ja: string;
   };
   privacy: PrivacyTranslations;
   accountDeletion: AccountDeletionTranslations;
