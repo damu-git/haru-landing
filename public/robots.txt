@@ -1,0 +1,8 @@
+# Haru AI Landing Page - robots.txt
+# https://haruai.im
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://haruai.im/sitemap.xml
