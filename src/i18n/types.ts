@@ -72,6 +72,66 @@ export interface AccountDeletionTranslations {
   contactInfo: string;
 }
 
+export interface TermsSection {
+  title: string;
+  content?: string;
+  items?: string[];
+  subsections?: {
+    title: string;
+    content?: string;
+    items?: string[];
+  }[];
+}
+
+export interface TermsTranslations {
+  pageTitle: string;
+  title: string;
+  backToHome: string;
+  effectiveDate: string;
+  sections: {
+    chapter1: {
+      title: string;
+      article1: TermsSection;
+      article2: TermsSection & { definitions: string[] };
+      article3: TermsSection & { items: string[] };
+    };
+    chapter2: {
+      title: string;
+      article4: TermsSection & { items: string[] };
+      article5: TermsSection;
+    };
+    chapter3: {
+      title: string;
+      article6: TermsSection & { services: string[]; items: string[] };
+      article7: TermsSection & { items: string[] };
+      article8: TermsSection & { items: string[] };
+      article9: TermsSection & { items: string[] };
+    };
+    chapter4: {
+      title: string;
+      article10: TermsSection & { items: string[] };
+      article11: TermsSection & { items: string[] };
+    };
+    chapter5: {
+      title: string;
+      article12: TermsSection & { prohibited: string[] };
+      article13: TermsSection & { measures: string[] };
+    };
+    chapter6: {
+      title: string;
+      article14: TermsSection & { items: string[] };
+      article15: TermsSection;
+      article16: TermsSection & { items: string[] };
+      article17: TermsSection & { items: string[] };
+      article18: TermsSection;
+    };
+    appendix: {
+      title: string;
+      content: string;
+    };
+  };
+}
+
 export interface Translations {
   meta: {
     title: string;
@@ -160,4 +220,5 @@ export interface Translations {
   };
   privacy: PrivacyTranslations;
   accountDeletion: AccountDeletionTranslations;
+  terms: TermsTranslations;
 }

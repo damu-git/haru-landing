@@ -200,6 +200,7 @@
           ["Registration", "Email, password (for email signup), nickname, date of birth, gender"],
           ["Social Login", "Social account identifier (Google/Apple ID)"],
           ["Service Use", "AI conversation content, profile information, interests, usage history"],
+          ["Matching Service", "Personality analysis results, matching preferences, match accept/reject records"],
           ["Payment", "Payment history, subscription status (card info stored by payment processor)"]
         ],
         "auto": "Automatically Collected",
@@ -220,6 +221,7 @@
         "rows": [
           ["Member Information", "Until account deletion", "Service agreement"],
           ["AI Conversation Content", "Until account deletion (or upon individual deletion request)", "Service provision"],
+          ["Matching Analysis Data", "Until account deletion", "Service provision"],
           ["Payment Records", "5 years", "E-Commerce Act"],
           ["Access Logs", "3 months", "Telecommunications Privacy Act"],
           ["Dispute Records", "3 years", "E-Commerce Act"]
@@ -239,26 +241,19 @@
         "intro": "The Company outsources personal information processing for service provision as follows:",
         "headers": ["Service Provider", "Outsourced Tasks", "Retention Period"],
         "rows": [
-          ["Google Firebase", "Authentication, push notifications, app analytics", "Until contract termination"],
-          ["Google Cloud (Gemini)", "AI response generation", "Temporary processing during API calls"],
-          ["Anthropic (Claude)", "AI response generation", "Temporary processing during API calls"],
-          ["OpenAI (GPT)", "AI response generation", "Temporary processing during API calls"],
+          ["Google LLC", "AI service provision, authentication, push notifications, app analytics", "Until contract termination (temporary processing during API calls)"],
           ["Amazon Web Services", "Data storage and processing", "Until contract termination"],
-          ["Apple Inc.", "Social login authentication", "Until contract termination"],
           ["RevenueCat", "Subscription payment management", "Until contract termination"]
         ],
-        "note": "※ AI conversation content is stored on Company servers for service provision (maintaining conversation context). AI service providers (Google, Anthropic, OpenAI) only process data during API calls and do not store or use it for AI model training."
+        "note": "※ AI conversation content is stored on Company servers for service provision (maintaining conversation context). Google only processes data during API calls and does not store or use it for AI model training."
       },
       "overseas": {
         "title": "6. Overseas Transfer of Personal Information",
         "intro": "The Company transfers personal information overseas for service provision:",
         "headers": ["Recipient", "Country", "Items Transferred", "Purpose"],
         "rows": [
-          ["Google LLC", "USA", "Account info, app usage, conversation content", "Authentication, analytics, AI response"],
-          ["Anthropic", "USA", "Conversation content (during API calls)", "AI response generation"],
-          ["OpenAI", "USA", "Conversation content (during API calls)", "AI response generation"],
+          ["Google LLC", "USA", "Conversation content, profile info, account info, app usage records", "AI service provision, authentication, analytics"],
           ["Amazon Web Services", "USA/Korea", "All service data", "Data storage"],
-          ["Apple Inc.", "USA", "Account information", "Social login authentication"],
           ["RevenueCat", "USA", "Payment information", "Subscription management"]
         ]
       },
@@ -336,5 +331,186 @@
       "If you have an active subscription, please cancel it first."
     ],
     "contactInfo": "If you have trouble deleting your account, please contact <a href=\"mailto:privacy@haruai.im\" class=\"text-primary hover:underline\">privacy@haruai.im</a>."
+  },
+  "terms": {
+    "pageTitle": "Terms of Service - Haru",
+    "title": "Haru Service Terms of Service",
+    "backToHome": "← Home",
+    "effectiveDate": "Effective Date: January 1, 2026",
+    "sections": {
+      "chapter1": {
+        "title": "Chapter 1: General Provisions",
+        "article1": {
+          "title": "Article 1 (Purpose)",
+          "content": "These Terms govern the terms and procedures for using the AI friend service \"Haru\" (hereinafter \"Service\") provided by damu (hereinafter \"Company\"), and stipulate the rights, obligations, and responsibilities of the Company and users."
+        },
+        "article2": {
+          "title": "Article 2 (Definitions)",
+          "definitions": [
+            "\"Service\" refers to AI conversation, friend matching, and related supplementary services provided by the Company.",
+            "\"User\" refers to a member who uses the Service in accordance with these Terms.",
+            "\"AI Friend\" refers to an artificial intelligence-based conversation partner provided by the Company.",
+            "\"Paid Service\" refers to subscription services and additional features provided by the Company for a fee."
+          ]
+        },
+        "article3": {
+          "title": "Article 3 (Effect and Amendment of Terms)",
+          "items": [
+            "These Terms become effective when posted on the service screen or otherwise notified to users.",
+            "The Company may amend these Terms within the scope permitted by applicable laws.",
+            "Changes to the Terms will be announced 7 days before the effective date. However, changes unfavorable to users will be announced 30 days in advance.",
+            "If you do not agree to the amended Terms, you may stop using the Service and withdraw."
+          ]
+        }
+      },
+      "chapter2": {
+        "title": "Chapter 2: Service Use Agreement",
+        "article4": {
+          "title": "Article 4 (Formation of Use Agreement)",
+          "content": "The use agreement is formed when the user agrees to these Terms and completes registration. The Company may refuse registration or terminate the use agreement afterwards in the following cases:",
+          "items": [
+            "If under 14 years of age",
+            "If using another person's information fraudulently",
+            "If previously lost eligibility to use the Service",
+            "If otherwise in violation of these Terms"
+          ]
+        },
+        "article5": {
+          "title": "Article 5 (Change of User Information)",
+          "content": "Users must immediately update their information in the app settings or notify customer service when personal information changes."
+        }
+      },
+      "chapter3": {
+        "title": "Chapter 3: Service Use",
+        "article6": {
+          "title": "Article 6 (Provision of Services)",
+          "content": "The Company provides the following services:",
+          "services": [
+            "Conversation service with AI friend",
+            "Friend matching service between users",
+            "Diary and recording service",
+            "Other services determined by the Company"
+          ],
+          "items": [
+            "The Service is provided 24 hours a day, 365 days a year in principle.",
+            "The Company may temporarily suspend the Service due to system maintenance, failures, etc."
+          ]
+        },
+        "article7": {
+          "title": "Article 7 (Change and Suspension of Services)",
+          "content": "The Company may change the Service as necessary for operational or technical reasons. Changes will be announced in advance with the details and effective date. The Company may suspend all or part of the Service in the following cases:",
+          "items": [
+            "Regular system maintenance, expansion, and replacement",
+            "Force majeure such as natural disasters or national emergencies",
+            "Termination of contract with service providers"
+          ]
+        },
+        "article8": {
+          "title": "Article 8 (Characteristics and Disclaimer of AI Service)",
+          "items": [
+            "The AI Friend is based on artificial intelligence technology and is not a real person.",
+            "AI Friend responses are for informational purposes and do not replace professional advice (medical, legal, financial, etc.).",
+            "The Company does not guarantee the accuracy, completeness, or suitability of AI Friend responses.",
+            "Users should only use AI Friend responses as reference material, and are responsible for decisions made based on them.",
+            "The AI Friend learns from user conversations to provide personalized responses, but this is for service quality improvement and is not disclosed externally."
+          ]
+        },
+        "article9": {
+          "title": "Article 9 (Friend Matching Service)",
+          "items": [
+            "The Company provides friend matching opportunities between users but does not guarantee matching results.",
+            "The Company is not responsible for interactions between matched users or the results thereof.",
+            "Users may not use information about others obtained through the matching service for purposes other than the Service."
+          ]
+        }
+      },
+      "chapter4": {
+        "title": "Chapter 4: Paid Services",
+        "article10": {
+          "title": "Article 10 (Paid Services and Payment)",
+          "items": [
+            "The Company provides paid subscription services in addition to free services.",
+            "Types, fees, and usage periods of paid services are displayed separately in the app.",
+            "Payment follows app store policies (Apple App Store, Google Play Store).",
+            "Subscription services are automatically renewed; if not cancelled at least 24 hours before the renewal date, automatic payment will occur."
+          ]
+        },
+        "article11": {
+          "title": "Article 11 (Withdrawal and Refund)",
+          "content": "Withdrawal is possible within 7 days after purchase if the service has not been used. Withdrawal is restricted in the following cases:",
+          "items": [
+            "If the service has been used after purchase",
+            "If the subscription period has passed",
+            "Refunds are processed according to each app store's policy.",
+            "If service use is impossible due to Company fault, refunds will be provided for the remaining period."
+          ]
+        }
+      },
+      "chapter5": {
+        "title": "Chapter 5: User Obligations",
+        "article12": {
+          "title": "Article 12 (User Obligations)",
+          "content": "Users must not engage in the following actions. Users must comply with applicable laws, these Terms, and service guidelines.",
+          "prohibited": [
+            "Using another person's information fraudulently or registering false information",
+            "Interfering with the Company's service operations",
+            "Causing discomfort to other users (profanity, defamation, harassment, etc.)",
+            "Abusing AI Friend to create harmful content",
+            "Commercial activities using the Service",
+            "Circumventing technical protection measures of the Service",
+            "Other actions that violate laws or these Terms"
+          ]
+        },
+        "article13": {
+          "title": "Article 13 (Sanctions)",
+          "content": "The Company may take the following actions if a user violates Article 12. The Company will notify users when sanctions are imposed. Users may appeal sanctions through customer service.",
+          "measures": [
+            "Warning",
+            "Temporary suspension of use",
+            "Permanent suspension and termination of membership"
+          ]
+        }
+      },
+      "chapter6": {
+        "title": "Chapter 6: Miscellaneous",
+        "article14": {
+          "title": "Article 14 (Copyright and Intellectual Property)",
+          "items": [
+            "Copyright for content included in the Service (AI responses, design, software, etc.) belongs to the Company.",
+            "Copyright for content created by users within the Service belongs to the users.",
+            "Users may not commercially use information obtained through the Service without prior consent from the Company."
+          ]
+        },
+        "article15": {
+          "title": "Article 15 (Privacy Protection)",
+          "content": "The Company protects users' personal information in accordance with the Privacy Policy."
+        },
+        "article16": {
+          "title": "Article 16 (Disclaimer)",
+          "items": [
+            "The Company is not responsible for service interruptions due to force majeure such as natural disasters, war, or telecommunications provider service interruptions.",
+            "The Company is not responsible for service disruptions caused by user fault.",
+            "The Company does not guarantee the effects users expect from the Service.",
+            "The Company has no obligation to intervene in disputes between users and is not responsible for damages arising therefrom."
+          ]
+        },
+        "article17": {
+          "title": "Article 17 (Dispute Resolution)",
+          "items": [
+            "In case of disputes related to service use, the Company and user will negotiate in good faith for amicable resolution.",
+            "If negotiation fails, the competent court shall be the court with jurisdiction over the Company's location.",
+            "Interpretation and application of these Terms shall be governed by the laws of the Republic of Korea."
+          ]
+        },
+        "article18": {
+          "title": "Article 18 (Customer Service)",
+          "content": "Email: cs@damu.dev<br>Hours: Weekdays 10:00 - 17:00 (Excluding holidays)"
+        }
+      },
+      "appendix": {
+        "title": "Addendum",
+        "content": "These Terms are effective from January 1, 2026."
+      }
+    }
   }
 }

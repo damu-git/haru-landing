@@ -600,7 +600,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
         <div>
           <h4 class="text-white font-semibold mb-4">${i18n.footer.company}</h4>
           <ul class="space-y-3 text-stone-400">
-            <li><a href="#" class="hover:text-white transition-colors">${i18n.footer.terms}</a></li>
+            <li><a href="/terms.html" class="hover:text-white transition-colors">${i18n.footer.terms}</a></li>
             <li><a href="/privacy.html" class="hover:text-white transition-colors">${i18n.footer.privacy}</a></li>
           </ul>
         </div>
