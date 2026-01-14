@@ -1,9 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <!-- Korean (Default) -->
   <url>
     <loc>https://haruai.im/</loc>
-    <lastmod>2026-01-12</lastmod>
+    <lastmod>2026-01-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://haruai.im/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://haruai.im/en/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://haruai.im/ja/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://haruai.im/" />
+  </url>
+
+  <!-- English -->
+  <url>
+    <loc>https://haruai.im/en/</loc>
+    <lastmod>2026-01-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://haruai.im/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://haruai.im/en/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://haruai.im/ja/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://haruai.im/" />
+  </url>
+
+  <!-- Japanese -->
+  <url>
+    <loc>https://haruai.im/ja/</loc>
+    <lastmod>2026-01-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://haruai.im/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://haruai.im/en/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://haruai.im/ja/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://haruai.im/" />
   </url>
 </urlset>
