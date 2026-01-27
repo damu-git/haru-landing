@@ -10,10 +10,49 @@
   --color-accent: #5B8C6A;
   --color-accent-light: #7BA88A;
   --font-family-sans: 'Noto Sans KR', system-ui, sans-serif;
+  --font-family-display-ko: 'Gamja Flower', cursive;
+  --font-family-display-en: 'Kalam', cursive;
+  --font-family-display-ja: 'Yomogi', cursive;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+/* Display font for headlines - 언어별 손글씨 폰트 */
+.font-display {
+  font-family: 'Gamja Flower', cursive;
+  letter-spacing: 0.01em;
+  font-weight: 400;
+}
+
+/* Brand logo with playful style */
+.brand-logo {
+  font-family: 'Gamja Flower', cursive;
+  letter-spacing: 0.02em;
+}
+
+/* Quote styling - 일기장에 적은 것 같은 느낌 */
+.font-quote {
+  font-family: 'Gamja Flower', cursive;
+  line-height: 1.6;
+}
+
+/* 영어 - Kalam */
+html[lang="en"] .font-display,
+html[lang="en"] .brand-logo,
+html[lang="en"] .font-quote {
+  font-family: 'Kalam', cursive;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+/* 일본어 - Yomogi */
+html[lang="ja"] .font-display,
+html[lang="ja"] .brand-logo,
+html[lang="ja"] .font-quote {
+  font-family: 'Yomogi', cursive;
+  letter-spacing: 0.02em;
 }
 
 /* Floating animation for illustrations */

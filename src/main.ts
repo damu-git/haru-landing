@@ -11,7 +11,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <!-- Navigation -->
   <nav class="fixed top-0 left-0 right-0 z-50 transition-all duration-300" id="nav">
     <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-      <a href="/" class="text-2xl font-bold text-stone-800 tracking-tight">${i18n.nav.brand}</a>
+      <a href="/" class="text-3xl text-stone-800 brand-logo">${i18n.nav.brand}</a>
       <div class="flex items-center gap-3">
         <!-- Language Switcher -->
         <div class="relative" id="lang-switcher">
@@ -59,7 +59,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
       <div class="grid lg:grid-cols-2 gap-12 items-center min-h-[80vh]">
         <!-- Left: Copy -->
         <div class="animate-fade-in-up">
-          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-stone-800 leading-tight mb-6">
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-stone-800 leading-tight mb-6 font-display">
             ${i18n.hero.headline1}<br>
             <span class="text-primary">${i18n.hero.headline2}</span>${i18n.hero.headline3}
           </h1>
@@ -142,7 +142,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
     <div class="max-w-6xl mx-auto px-6 relative">
       <div class="text-center mb-16 reveal">
         <p class="text-primary font-medium mb-3">${i18n.problem.badge}</p>
-        <h2 class="text-3xl md:text-4xl font-bold text-stone-800 mb-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-stone-800 mb-4 font-display">
           ${i18n.problem.title}
         </h2>
         <p class="text-stone-500 max-w-xl mx-auto">
@@ -227,8 +227,8 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
                     </svg>
                   </div>
-                  <p class="text-stone-700 font-medium text-lg leading-relaxed">
-                    ${i18n.solution.quote}
+                  <p class="text-stone-700 text-xl leading-relaxed font-quote">
+                    "${i18n.solution.quote}"
                   </p>
                 </div>
               </div>
@@ -242,7 +242,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
         <!-- Right: Copy -->
         <div class="reveal order-1 lg:order-2">
           <p class="text-primary font-medium mb-3">${i18n.solution.badge}</p>
-          <h2 class="text-3xl md:text-4xl font-bold text-stone-800 mb-6">
+          <h2 class="text-3xl md:text-4xl font-bold text-stone-800 mb-6 font-display">
             ${i18n.solution.title}
           </h2>
           <p class="text-xl text-stone-600 mb-8 leading-relaxed">
@@ -295,7 +295,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
     <div class="max-w-6xl mx-auto px-6">
       <div class="text-center mb-20 reveal">
         <p class="text-primary font-medium mb-3">${i18n.features.badge}</p>
-        <h2 class="text-3xl md:text-4xl font-bold text-stone-800 mb-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-stone-800 mb-4 font-display">
           ${i18n.features.title}
         </h2>
         <p class="text-stone-500 max-w-xl mx-auto">
@@ -372,7 +372,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
           ${i18n.connection.comingSoon}
         </div>
         <p class="text-primary font-medium mb-3">${i18n.connection.badge}</p>
-        <h2 class="text-3xl md:text-4xl font-bold text-stone-800 mb-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-stone-800 mb-4 font-display">
           ${i18n.connection.title}
         </h2>
         <p class="text-stone-500 max-w-xl mx-auto">
@@ -440,7 +440,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
     <div class="max-w-4xl mx-auto px-6">
       <div class="text-center mb-20 reveal">
         <p class="text-primary font-medium mb-3">${i18n.howItWorks.badge}</p>
-        <h2 class="text-3xl md:text-4xl font-bold text-stone-800">
+        <h2 class="text-3xl md:text-4xl font-bold text-stone-800 font-display">
           ${i18n.howItWorks.title}
         </h2>
       </div>
@@ -543,7 +543,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
         ${i18n.cta.badge}
       </div>
 
-      <h2 class="text-3xl md:text-5xl font-bold text-white mb-6">
+      <h2 class="text-3xl md:text-5xl font-bold text-white mb-6 font-display">
         ${i18n.cta.title1}<br>${i18n.cta.title2}
       </h2>
       <p class="text-xl text-stone-300 mb-12 max-w-lg mx-auto">
@@ -581,7 +581,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
       <div class="grid md:grid-cols-4 gap-12 mb-12">
         <!-- Brand -->
         <div>
-          <p class="text-2xl font-bold text-white mb-3">${i18n.footer.brand}</p>
+          <p class="text-3xl text-white mb-3 brand-logo">${i18n.footer.brand}</p>
           <p class="text-stone-400 text-sm">
             ${i18n.footer.tagline1}<br>
             ${i18n.footer.tagline2}
