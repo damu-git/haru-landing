@@ -512,5 +512,90 @@
         "content": "These Terms are effective from January 1, 2026."
       }
     }
+  },
+  "safetyPolicy": {
+    "pageTitle": "Safety Policy - Haru",
+    "title": "Safety Policy",
+    "backToHome": "← Home",
+    "intro": "Damu (hereinafter \"Company\") prioritizes the safety of all users, especially children and adolescents. This policy explains our commitment and procedures for creating a safe environment and responding to harmful content within the Haru service.",
+    "effectiveDate": "Effective Date: January 1, 2026",
+    "emergency": {
+      "title": "Emergency Reporting",
+      "content": "If you discover child abuse, exploitation, or an immediate danger situation, please contact local emergency services immediately."
+    },
+    "sections": {
+      "commitment": {
+        "title": "1. Our Commitment to Safety",
+        "content": "The Company applies a zero-tolerance policy towards all forms of harmful content and behavior, including Child Sexual Abuse and Exploitation (CSAE). We are committed to maintaining a safe and healthy community environment."
+      },
+      "ageRestriction": {
+        "title": "2. Age Restriction Policy",
+        "intro": "The Haru service is only available to users aged 14 and above.",
+        "items": [
+          "Age is verified through date of birth confirmation during registration.",
+          "Accounts confirmed to be under 14 years old will be immediately restricted.",
+          "Providing false age information may result in permanent suspension.",
+          "Some features may be restricted for minors (aged 14-17)."
+        ]
+      },
+      "prohibitedContent": {
+        "title": "3. Prohibited Content and Behavior",
+        "intro": "The following content and behaviors are strictly prohibited:",
+        "items": [
+          "Child Sexual Abuse Material (CSAM) or any content suggesting it",
+          "Grooming behavior targeting children",
+          "Sexual approaches or inappropriate conversation attempts towards minors",
+          "Content promoting child abuse, neglect, or exploitation",
+          "Sexual depictions of real or fictional children",
+          "Illegally recorded content or content recorded without consent",
+          "Content promoting violence, self-harm, or suicide",
+          "Hate speech, discrimination, or harassment"
+        ]
+      },
+      "reporting": {
+        "title": "4. How to Report",
+        "intro": "If you discover inappropriate content or suspicious behavior, please report it using the following methods:",
+        "inApp": {
+          "title": "In-App Reporting",
+          "items": [
+            "Long press on the message you want to report",
+            "Select \"Report\" from the menu that appears",
+            "Select report type and provide details"
+          ]
+        },
+        "email": {
+          "title": "Email Reporting",
+          "content": "For urgent or detailed reports, please contact <a href=\"mailto:safety@haruai.im\" class=\"text-primary hover:underline\">safety@haruai.im</a>. Child safety-related reports are prioritized and processed within 24 hours."
+        }
+      },
+      "response": {
+        "title": "5. Report Processing Procedures",
+        "intro": "The Company responds promptly to reports according to the following procedures:",
+        "items": [
+          "Child safety-related reports: Review and action within 24 hours",
+          "General harmful content reports: Review and action within 48 hours",
+          "Immediate removal of content upon violation confirmation",
+          "Warning, temporary suspension, or permanent suspension for violating accounts",
+          "Report to relevant authorities when legal action is required",
+          "Notification of processing results to reporters (except anonymous reports)"
+        ]
+      },
+      "cooperation": {
+        "title": "6. Law Enforcement Cooperation",
+        "content": "The Company actively cooperates with relevant agencies including police, prosecutors, and child protection organizations on matters related to child exploitation and abuse. When there is a court warrant or legal request, we provide necessary information in accordance with applicable laws. Upon discovery of CSAM, we immediately report to relevant authorities and also report to the National Center for Missing & Exploited Children (NCMEC)."
+      },
+      "education": {
+        "title": "7. Safety Education and Prevention",
+        "content": "To create a safe service environment, the Company conducts regular safety training for employees and provides users with guides for safe online activities. Our AI system is continuously improved to detect harmful content in advance."
+      },
+      "contact": {
+        "title": "8. Safety Policy Inquiries",
+        "content": "For inquiries about the safety policy, please contact <a href=\"mailto:safety@haruai.im\" class=\"text-primary hover:underline\">safety@haruai.im</a>."
+      },
+      "updates": {
+        "title": "9. Policy Changes",
+        "content": "This safety policy is effective from January 1, 2026. We will notify you in advance through in-service announcements when the policy changes."
+      }
+    }
   }
 }

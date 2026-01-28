@@ -83,6 +83,67 @@ export interface TermsSection {
   }[];
 }
 
+export interface SafetyPolicyTranslations {
+  pageTitle: string;
+  title: string;
+  backToHome: string;
+  intro: string;
+  effectiveDate: string;
+  emergency: {
+    title: string;
+    content: string;
+  };
+  sections: {
+    commitment: {
+      title: string;
+      content: string;
+    };
+    ageRestriction: {
+      title: string;
+      intro: string;
+      items: string[];
+    };
+    prohibitedContent: {
+      title: string;
+      intro: string;
+      items: string[];
+    };
+    reporting: {
+      title: string;
+      intro: string;
+      inApp: {
+        title: string;
+        items: string[];
+      };
+      email: {
+        title: string;
+        content: string;
+      };
+    };
+    response: {
+      title: string;
+      intro: string;
+      items: string[];
+    };
+    cooperation: {
+      title: string;
+      content: string;
+    };
+    education: {
+      title: string;
+      content: string;
+    };
+    contact: {
+      title: string;
+      content: string;
+    };
+    updates: {
+      title: string;
+      content: string;
+    };
+  };
+}
+
 export interface TermsTranslations {
   pageTitle: string;
   title: string;
@@ -221,4 +282,5 @@ export interface Translations {
   privacy: PrivacyTranslations;
   accountDeletion: AccountDeletionTranslations;
   terms: TermsTranslations;
+  safetyPolicy: SafetyPolicyTranslations;
 }
