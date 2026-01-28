@@ -294,7 +294,7 @@
         "rows": [
           ["氏名", "チェ・ボムソク"],
           ["役職", "代表"],
-          ["メール", "privacy@haruai.im"]
+          ["メール", "privacy@damu.dev"]
         ],
         "note": "個人情報に関するお問い合わせ、苦情処理、被害救済は上記連絡先にお問い合わせください。"
       },
@@ -331,7 +331,7 @@
       "削除されたデータは復元できません。",
       "有料サブスクリプション中の場合は、先にサブスクリプションを解約してください。"
     ],
-    "contactInfo": "アカウント削除にお困りの場合は、<a href=\"mailto:privacy@haruai.im\" class=\"text-primary hover:underline\">privacy@haruai.im</a>までお問い合わせください。"
+    "contactInfo": "アカウント削除にお困りの場合は、<a href=\"mailto:privacy@damu.dev\" class=\"text-primary hover:underline\">privacy@damu.dev</a>までお問い合わせください。"
   },
   "terms": {
     "pageTitle": "利用規約 - ハル (Haru)",
@@ -566,7 +566,7 @@
         },
         "email": {
           "title": "メール通報",
-          "content": "緊急または詳細な通報が必要な場合は、<a href=\"mailto:safety@haruai.im\" class=\"text-primary hover:underline\">safety@haruai.im</a>にご連絡ください。児童安全関連の通報は24時間以内に優先処理されます。"
+          "content": "緊急または詳細な通報が必要な場合は、<a href=\"mailto:safety@damu.dev\" class=\"text-primary hover:underline\">safety@damu.dev</a>にご連絡ください。児童安全関連の通報は24時間以内に優先処理されます。"
         }
       },
       "response": {
@@ -591,7 +591,7 @@
       },
       "contact": {
         "title": "8. 安全ポリシーに関するお問い合わせ",
-        "content": "安全ポリシーに関するお問い合わせは、<a href=\"mailto:safety@haruai.im\" class=\"text-primary hover:underline\">safety@haruai.im</a>にご連絡ください。"
+        "content": "安全ポリシーに関するお問い合わせは、<a href=\"mailto:safety@damu.dev\" class=\"text-primary hover:underline\">safety@damu.dev</a>にご連絡ください。"
       },
       "updates": {
         "title": "9. ポリシー変更",

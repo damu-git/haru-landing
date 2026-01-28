@@ -294,7 +294,7 @@
         "rows": [
           ["Name", "Beomseok Choi"],
           ["Position", "CEO"],
-          ["Email", "privacy@haruai.im"]
+          ["Email", "privacy@damu.dev"]
         ],
         "note": "For inquiries, complaints, or damage relief regarding personal information, please contact the above."
       },
@@ -331,7 +331,7 @@
       "Deleted data cannot be recovered.",
       "If you have an active subscription, please cancel it first."
     ],
-    "contactInfo": "If you have trouble deleting your account, please contact <a href=\"mailto:privacy@haruai.im\" class=\"text-primary hover:underline\">privacy@haruai.im</a>."
+    "contactInfo": "If you have trouble deleting your account, please contact <a href=\"mailto:privacy@damu.dev\" class=\"text-primary hover:underline\">privacy@damu.dev</a>."
   },
   "terms": {
     "pageTitle": "Terms of Service - Haru",
@@ -566,7 +566,7 @@
         },
         "email": {
           "title": "Email Reporting",
-          "content": "For urgent or detailed reports, please contact <a href=\"mailto:safety@haruai.im\" class=\"text-primary hover:underline\">safety@haruai.im</a>. Child safety-related reports are prioritized and processed within 24 hours."
+          "content": "For urgent or detailed reports, please contact <a href=\"mailto:safety@damu.dev\" class=\"text-primary hover:underline\">safety@damu.dev</a>. Child safety-related reports are prioritized and processed within 24 hours."
         }
       },
       "response": {
@@ -591,7 +591,7 @@
       },
       "contact": {
         "title": "8. Safety Policy Inquiries",
-        "content": "For inquiries about the safety policy, please contact <a href=\"mailto:safety@haruai.im\" class=\"text-primary hover:underline\">safety@haruai.im</a>."
+        "content": "For inquiries about the safety policy, please contact <a href=\"mailto:safety@damu.dev\" class=\"text-primary hover:underline\">safety@damu.dev</a>."
       },
       "updates": {
         "title": "9. Policy Changes",
