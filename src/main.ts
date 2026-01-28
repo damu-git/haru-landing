@@ -602,6 +602,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
           <ul class="space-y-3 text-stone-400">
             <li><a href="/terms.html" class="hover:text-white transition-colors">${i18n.footer.terms}</a></li>
             <li><a href="/privacy.html" class="hover:text-white transition-colors">${i18n.footer.privacy}</a></li>
+            <li><a href="/safety-policy.html" class="hover:text-white transition-colors">${i18n.footer.safety}</a></li>
           </ul>
         </div>
 

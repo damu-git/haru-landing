@@ -271,6 +271,7 @@ export interface Translations {
     company: string;
     terms: string;
     privacy: string;
+    safety: string;
     contact: string;
     copyright: string;
   };
