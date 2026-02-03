@@ -367,10 +367,6 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 
     <div class="max-w-6xl mx-auto px-6 relative">
       <div class="text-center mb-20 reveal">
-        <div class="inline-flex items-center gap-2 bg-rose-100 px-4 py-2 rounded-full text-sm text-rose-600 mb-4">
-          <span class="w-2 h-2 bg-rose-400 rounded-full animate-pulse"></span>
-          ${i18n.connection.comingSoon}
-        </div>
         <p class="text-primary font-medium mb-3">${i18n.connection.badge}</p>
         <h2 class="text-3xl md:text-4xl font-bold text-stone-800 mb-4 font-display">
           ${i18n.connection.title}
