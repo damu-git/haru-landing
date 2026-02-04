@@ -167,24 +167,27 @@ export interface TermsTranslations {
       article7: TermsSection & { items: string[] };
       article8: TermsSection & { items: string[] };
       article9: TermsSection & { items: string[] };
+      article10: TermsSection & { items: string[] };
     };
     chapter4: {
       title: string;
-      article10: TermsSection & { items: string[] };
       article11: TermsSection & { items: string[] };
+      article12: TermsSection & { items: string[] };
     };
     chapter5: {
       title: string;
-      article12: TermsSection & { prohibited: string[] };
-      article13: TermsSection & { measures: string[] };
+      article13: TermsSection & { prohibited: string[] };
+      article14: TermsSection & { reasons: string[]; notes: string[] };
+      article15: TermsSection & { measures: string[]; notes: string[] };
+      article16: TermsSection & { items: string[] };
     };
     chapter6: {
       title: string;
-      article14: TermsSection & { items: string[] };
-      article15: TermsSection;
-      article16: TermsSection & { items: string[] };
       article17: TermsSection & { items: string[] };
       article18: TermsSection;
+      article19: TermsSection & { items: string[] };
+      article20: TermsSection & { items: string[] };
+      article21: TermsSection;
     };
     appendix: {
       title: string;

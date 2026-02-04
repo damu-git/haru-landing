@@ -202,7 +202,8 @@
           ["Social Login", "Social account identifier (Google/Apple ID)"],
           ["Service Use", "AI conversation content, profile information, interests, usage history"],
           ["Matching Service", "Personality analysis results, matching preferences, match accept/reject records"],
-          ["Payment", "Payment history, subscription status (card info stored by payment processor)"]
+          ["Payment", "Payment history, subscription status (card info stored by payment processor)"],
+          ["Reports", "Report content, report date and time"]
         ],
         "auto": "Automatically Collected",
         "autoItems": [
@@ -225,7 +226,8 @@
           ["Matching Analysis Data", "Until account deletion", "Service provision"],
           ["Payment Records", "5 years", "E-Commerce Act"],
           ["Access Logs", "3 months", "Telecommunications Privacy Act"],
-          ["Dispute Records", "3 years", "E-Commerce Act"]
+          ["Dispute Records", "3 years", "E-Commerce Act"],
+          ["Report Records", "3 years", "Dispute resolution"]
         ],
         "note": "※ Personal information is destroyed without delay upon account deletion. However, if retention is required by law, it will be stored for the required period before destruction."
       },
@@ -423,12 +425,19 @@
             "The Company is not responsible for interactions between matched users or the results thereof.",
             "Users may not use information about others obtained through the matching service for purposes other than the Service."
           ]
+        },
+        "article10": {
+          "title": "Article 10 (Dormant Accounts)",
+          "items": [
+            "The Company may convert accounts of users who have not accessed the service for 30 days or more to dormant status.",
+            "Dormant accounts are automatically reactivated upon re-accessing the service."
+          ]
         }
       },
       "chapter4": {
         "title": "Chapter 4: Paid Services",
-        "article10": {
-          "title": "Article 10 (Paid Services and Payment)",
+        "article11": {
+          "title": "Article 11 (Paid Services and Payment)",
           "items": [
             "The Company provides paid subscription services in addition to free services.",
             "Types, fees, and usage periods of paid services are displayed separately in the app.",
@@ -436,8 +445,8 @@
             "Subscription services are automatically renewed; if not cancelled at least 24 hours before the renewal date, automatic payment will occur."
           ]
         },
-        "article11": {
-          "title": "Article 11 (Withdrawal and Refund)",
+        "article12": {
+          "title": "Article 12 (Withdrawal and Refund)",
           "content": "Withdrawal is possible within 7 days after purchase if the service has not been used. Withdrawal is restricted in the following cases:",
           "items": [
             "If the service has been used after purchase",
@@ -449,8 +458,8 @@
       },
       "chapter5": {
         "title": "Chapter 5: User Obligations",
-        "article12": {
-          "title": "Article 12 (User Obligations)",
+        "article13": {
+          "title": "Article 13 (User Obligations)",
           "content": "Users must not engage in the following actions. Users must comply with applicable laws, these Terms, and service guidelines.",
           "prohibited": [
             "Using another person's information fraudulently or registering false information",
@@ -462,32 +471,59 @@
             "Other actions that violate laws or these Terms"
           ]
         },
-        "article13": {
-          "title": "Article 13 (Sanctions)",
-          "content": "The Company may take the following actions if a user violates Article 12. The Company will notify users when sanctions are imposed. Users may appeal sanctions through customer service.",
+        "article14": {
+          "title": "Article 14 (Reporting)",
+          "content": "Users may report to the Company through the in-app reporting feature when other users violate Article 13.",
+          "reasons": [
+            "Profanity, defamation, hate speech",
+            "Sexual harassment or sexually offensive behavior",
+            "Spam, advertising, fraud",
+            "Requesting or disclosing personal information",
+            "Other violations of the Terms of Service"
+          ],
+          "notes": [
+            "The Company will review and process reports within 7 days of receipt.",
+            "Users who repeatedly file false or malicious reports may face sanctions."
+          ]
+        },
+        "article15": {
+          "title": "Article 15 (Sanctions)",
+          "content": "The Company may take the following actions if a user violates Article 13.",
           "measures": [
-            "Warning",
-            "Temporary suspension of use",
-            "Permanent suspension and termination of membership"
+            "Warning: Minor violation or first offense",
+            "Temporary suspension: Accumulated warnings or serious violation",
+            "Permanent suspension: Repeated violations or severe violations"
+          ],
+          "notes": [
+            "The Company will notify users when sanctions are imposed.",
+            "Users may file an objection through customer service within 14 days of notification.",
+            "The paid service period is not extended during suspension, and no refunds are provided for suspensions due to user fault."
+          ]
+        },
+        "article16": {
+          "title": "Article 16 (Content Management)",
+          "items": [
+            "The Company may delete or restrict access to content posted by users without prior notice if it is deemed to violate Article 13 or cause harm to other users.",
+            "Deleted content will not be restored."
           ]
         }
       },
       "chapter6": {
         "title": "Chapter 6: Miscellaneous",
-        "article14": {
-          "title": "Article 14 (Copyright and Intellectual Property)",
+        "article17": {
+          "title": "Article 17 (Copyright and Intellectual Property)",
           "items": [
             "Copyright for content included in the Service (AI responses, design, software, etc.) belongs to the Company.",
             "Copyright for content created by users within the Service belongs to the users.",
             "Users may not commercially use information obtained through the Service without prior consent from the Company."
           ]
         },
-        "article15": {
-          "title": "Article 15 (Privacy Protection)",
+        "article18": {
+          "title": "Article 18 (Privacy Protection)",
           "content": "The Company protects users' personal information in accordance with the Privacy Policy."
         },
-        "article16": {
-          "title": "Article 16 (Disclaimer)",
+        "article19": {
+          "title": "Article 19 (Disclaimer)",
           "items": [
             "The Company is not responsible for service interruptions due to force majeure such as natural disasters, war, or telecommunications provider service interruptions.",
             "The Company is not responsible for service disruptions caused by user fault.",
@@ -495,16 +531,16 @@
             "The Company has no obligation to intervene in disputes between users and is not responsible for damages arising therefrom."
           ]
         },
-        "article17": {
-          "title": "Article 17 (Dispute Resolution)",
+        "article20": {
+          "title": "Article 20 (Dispute Resolution)",
           "items": [
             "In case of disputes related to service use, the Company and user will negotiate in good faith for amicable resolution.",
             "If negotiation fails, the competent court shall be the court with jurisdiction over the Company's location.",
             "Interpretation and application of these Terms shall be governed by the laws of the Republic of Korea."
           ]
         },
-        "article18": {
-          "title": "Article 18 (Customer Service)",
+        "article21": {
+          "title": "Article 21 (Customer Service)",
           "content": "Email: cs@damu.dev<br>Hours: Weekdays 10:00 - 17:00 (Excluding holidays)"
         }
       },

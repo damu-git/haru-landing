@@ -93,44 +93,56 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
         <h3>${s.chapter3.article9.title}</h3>
         ${createOrderedList(s.chapter3.article9.items)}
 
+        <h3>${s.chapter3.article10.title}</h3>
+        ${createOrderedList(s.chapter3.article10.items)}
+
         <!-- Chapter 4 -->
         <h2>${s.chapter4.title}</h2>
 
-        <h3>${s.chapter4.article10.title}</h3>
-        ${createOrderedList(s.chapter4.article10.items)}
-
         <h3>${s.chapter4.article11.title}</h3>
-        <p>${s.chapter4.article11.content}</p>
-        ${createList(s.chapter4.article11.items)}
+        ${createOrderedList(s.chapter4.article11.items)}
+
+        <h3>${s.chapter4.article12.title}</h3>
+        <p>${s.chapter4.article12.content}</p>
+        ${createList(s.chapter4.article12.items)}
 
         <!-- Chapter 5 -->
         <h2>${s.chapter5.title}</h2>
 
-        <h3>${s.chapter5.article12.title}</h3>
-        <p>${s.chapter5.article12.content}</p>
-        ${createList(s.chapter5.article12.prohibited)}
-
         <h3>${s.chapter5.article13.title}</h3>
         <p>${s.chapter5.article13.content}</p>
-        ${createList(s.chapter5.article13.measures)}
+        ${createList(s.chapter5.article13.prohibited)}
+
+        <h3>${s.chapter5.article14.title}</h3>
+        <p>${s.chapter5.article14.content}</p>
+        ${createList(s.chapter5.article14.reasons)}
+        ${createOrderedList(s.chapter5.article14.notes)}
+
+        <h3>${s.chapter5.article15.title}</h3>
+        <p>${s.chapter5.article15.content}</p>
+        ${createList(s.chapter5.article15.measures)}
+        ${createOrderedList(s.chapter5.article15.notes)}
+
+        <h3>${s.chapter5.article16.title}</h3>
+        ${createOrderedList(s.chapter5.article16.items)}
 
         <!-- Chapter 6 -->
         <h2>${s.chapter6.title}</h2>
-
-        <h3>${s.chapter6.article14.title}</h3>
-        ${createOrderedList(s.chapter6.article14.items)}
-
-        <h3>${s.chapter6.article15.title}</h3>
-        <p>${s.chapter6.article15.content}</p>
-
-        <h3>${s.chapter6.article16.title}</h3>
-        ${createOrderedList(s.chapter6.article16.items)}
 
         <h3>${s.chapter6.article17.title}</h3>
         ${createOrderedList(s.chapter6.article17.items)}
 
         <h3>${s.chapter6.article18.title}</h3>
         <p>${s.chapter6.article18.content}</p>
+
+        <h3>${s.chapter6.article19.title}</h3>
+        ${createOrderedList(s.chapter6.article19.items)}
+
+        <h3>${s.chapter6.article20.title}</h3>
+        ${createOrderedList(s.chapter6.article20.items)}
+
+        <h3>${s.chapter6.article21.title}</h3>
+        <p>${s.chapter6.article21.content}</p>
 
         <!-- Appendix -->
         <h2>${s.appendix.title}</h2>
