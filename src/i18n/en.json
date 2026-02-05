@@ -350,7 +350,7 @@
         "article2": {
           "title": "Article 2 (Definitions)",
           "definitions": [
-            "\"Service\" refers to AI conversation, friend matching, and related supplementary services provided by the Company.",
+            "\"Service\" refers to AI conversation, friend recommendation, and related supplementary services provided by the Company.",
             "\"User\" refers to a member who uses the Service in accordance with these Terms.",
             "\"AI Friend\" refers to an artificial intelligence-based conversation partner provided by the Company.",
             "\"Paid Service\" refers to subscription services and additional features provided by the Company for a fee."
@@ -390,7 +390,7 @@
           "content": "The Company provides the following services:",
           "services": [
             "Conversation service with AI friend",
-            "Friend matching service between users",
+            "Friend recommendation service between users",
             "Diary and recording service",
             "Other services determined by the Company"
           ],
@@ -419,11 +419,13 @@
           ]
         },
         "article9": {
-          "title": "Article 9 (Friend Matching Service)",
+          "title": "Article 9 (Friend Recommendation Service)",
           "items": [
-            "The Company provides friend matching opportunities between users but does not guarantee matching results.",
-            "The Company is not responsible for interactions between matched users or the results thereof.",
-            "Users may not use information about others obtained through the matching service for purposes other than the Service."
+            "The friend recommendation service is only available to users aged 18 or older.",
+            "Users under 18 may only use the AI friend conversation service, and the friend recommendation feature is restricted regardless of paid service subscription status.",
+            "The Company provides friend recommendation opportunities between users but does not guarantee recommendation results.",
+            "The Company is not responsible for interactions between recommended users or the results thereof.",
+            "Users may not use information about others obtained through the recommendation service for purposes other than the Service."
           ]
         },
         "article10": {
