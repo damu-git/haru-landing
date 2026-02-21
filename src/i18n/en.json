@@ -245,10 +245,11 @@
         "headers": ["Service Provider", "Outsourced Tasks", "Retention Period"],
         "rows": [
           ["Google LLC", "AI service provision, authentication, push notifications, app analytics", "Until contract termination (temporary processing during API calls)"],
+          ["OpenAI, Inc.", "AI service provision", "Until contract termination (temporary processing during API calls)"],
           ["Amazon Web Services", "Data storage and processing", "Until contract termination"],
           ["RevenueCat", "Subscription payment management", "Until contract termination"]
         ],
-        "note": "※ AI conversation content is stored on Company servers for service provision (maintaining conversation context). Google only processes data during API calls and does not store or use it for AI model training."
+        "note": "※ AI conversation content is stored on Company servers for service provision (maintaining conversation context). Google and OpenAI only process data during API calls and do not store or use it for AI model training."
       },
       "overseas": {
         "title": "6. Overseas Transfer of Personal Information",
@@ -256,6 +257,7 @@
         "headers": ["Recipient", "Country", "Items Transferred", "Purpose"],
         "rows": [
           ["Google LLC", "USA", "Conversation content, profile info, account info, app usage records", "AI service provision, authentication, analytics"],
+          ["OpenAI, Inc.", "USA", "Conversation content, profile info", "AI service provision"],
           ["Amazon Web Services", "USA/Korea", "All service data", "Data storage"],
           ["RevenueCat", "USA", "Payment information", "Subscription management"]
         ]
