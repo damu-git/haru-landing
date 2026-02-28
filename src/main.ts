@@ -554,12 +554,12 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
           </svg>
           ${i18n.cta.appStore}
         </button>
-        <button id="btn-playstore" class="group bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-2xl text-lg font-semibold transition-all border border-white/20 hover:border-white/30 hover:-translate-y-1 inline-flex items-center justify-center gap-3 backdrop-blur-sm">
+        <a href="https://play.google.com/store/apps/details?id=im.haruai.app" target="_blank" rel="noopener noreferrer" class="group bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-2xl text-lg font-semibold transition-all border border-white/20 hover:border-white/30 hover:-translate-y-1 inline-flex items-center justify-center gap-3 backdrop-blur-sm">
           <svg class="w-7 h-7" viewBox="0 0 24 24" fill="currentColor">
             <path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 01-.61-.92V2.734a1 1 0 01.609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.198l2.807 1.626a1 1 0 010 1.73l-2.808 1.626L15.206 12l2.492-2.491zM5.864 2.658L16.8 8.99l-2.302 2.302-8.634-8.634z"/>
           </svg>
           ${i18n.cta.googlePlay}
-        </button>
+        </a>
       </div>
 
       <!-- Toast -->
@@ -684,7 +684,6 @@ const showToast = () => {
 }
 
 document.getElementById('btn-appstore')?.addEventListener('click', showToast)
-document.getElementById('btn-playstore')?.addEventListener('click', showToast)
 
 // Chat animation
 const chatContainer = document.getElementById('chat-container')
